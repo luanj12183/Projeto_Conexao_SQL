@@ -1,38 +1,16 @@
-using Microsoft.AspNetCore.Mvc;
 using Projeto_Conexao_MYSQL;
-using System.Collections.Generic;
 
-namespace Projeto_Conexao_MYSQL.Controllers
+namespace Projeto_Conexao_MYSQL.Models
 {
-    public class ProdutoController : Controller
+    public class Produto 
     {
-        public IActionResult Index()
-        {
 
-            List <int> ids = new List<int> { 1, 2, 3};
-            List<int> estoques = new List<int> {30, 50, 60};
+    public int Id {get; set; } 
 
-            List<string> nomes = new List<string>
-            {
-                "Teclado",
-                "Notebook",
-                "Cabo de Rede"
-            };
+    public string NomesProdutos {get; set; } = string.Empty;
 
-            List<double> precos = new List<double>
-            {
-                400.00,
-                3500.00,
-                70.50
-            };
+    public int Estoques {get; set; }
 
-         ViewBag.ID = ids;
-         ViewBag.Estoques = estoques;
-
-         ViewBag.NomesProdutos = nomes;
-         ViewBag.Precos = precos;
-
-            return View();
-        }
+    public double Precos {get; set; }
     }
-}
+} 
