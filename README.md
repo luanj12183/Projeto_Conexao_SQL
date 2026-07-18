@@ -1,6 +1,6 @@
 #Projeto de Conexão SQL + Azure (Cloud)
 
-📦 Gerenciador de Produtos (.NET Core + Azure SQL)
+📦 Gerenciador de Produtos **(.NET Core + Azure SQL)**
 Este projeto é uma aplicação web em ASP.NET Core MVC desenvolvida para o gerenciamento completo de produtos (CRUD), com armazenamento e persistência de dados em tempo real na nuvem utilizando o Azure SQL Database.
 
 🚀 Destaques da Integração com o Azure
